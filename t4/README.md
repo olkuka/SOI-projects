@@ -14,38 +14,40 @@ klientów fikcyjne wiadomości wyłącznie tekstowe, a 'czytelnik' pokazywał je
 **Testowanie:**
 
 Testy należy uruchamiać poprzed odkomentowanie jednego z nich w funkcji main().
+
 Cały program należy uruchamiać wpisując w linii komend:
+
 g++ -pthread main.cpp
+
 ./a.out
 
+
 Odczytywanie wyjścia standardowego:
-• linie poprzedzone „***” - są to linie wypisujące podstawowe komentarze o
-operacjach, które w danym momencie dzieją się w programie.
-• zwykłe linie, niepoprzedzone niczym – są to WIADOMOŚCI, które wyświetla
-reader.
+
+• linie poprzedzone „***” - są to linie wypisujące podstawowe komentarze o operacjach, które w danym momencie dzieją się w programie.
+
+• zwykłe linie, niepoprzedzone niczym – są to WIADOMOŚCI, które wyświetla reader.
 
 
-• test_uzytkownikow() - dodaje wiadomości tylko zwykłych użytkowników, aż do
-przepełnienia bufora. Uruchamiam jeden wątek odpowiedzialny za rozsyłanie
-wiadomości przez użytkowników.
-• test_VIP() - test taki sam jak powyżej, ale dodaje również wiadomości z
-priorytetem 1.•
-test_readera() - uruchamiam wątek, który dodaje do bufora dokładnie tyle
-wiadomości, ile wynosi maksymalna jego pojemność. Następnie uruchamiam
-wątek readera.
-Trzeba zauważyć, że wyświetlanie wiadomości nie odbywa się od razu w funkcji
-read_message(), tylko poza nią. Dlatego patrząc na operacje i wyświetlane
-wiadomości można pomyśleć, że coś jest nie tak. Działa to w następujący sposób:
+• test_uzytkownikow() - dodaje wiadomości tylko zwykłych użytkowników, aż do przepełnienia bufora. Uruchamiam jeden wątek odpowiedzialny za rozsyłanie wiadomości przez użytkowników.
+
+• test_VIP() - test taki sam jak powyżej, ale dodaje również wiadomości z priorytetem 1.
+• test_readera() - uruchamiam wątek, który dodaje do bufora dokładnie tyle wiadomości, ile wynosi maksymalna jego pojemność. Następnie uruchamiam wątek readera. Trzeba zauważyć, że wyświetlanie wiadomości nie odbywa się od razu w funkcji read_message(), tylko poza nią. Dlatego patrząc na operacje i wyświetlane wiadomości można pomyśleć, że coś jest nie tak. Działa to w następujący sposób:
+
 - reader pobiera wiadomość z bufora (komentarz)
-- reader zmniejsza size o 1 i wyświetla (komentarz), ile jest aktualnych
-wiadomości w buforze.
+
+- reader zmniejsza size o 1 i wyświetla (komentarz), ile jest aktualnych wiadomości w buforze.
+
 - dopiero teraz ta wiadomość jest wyświetlana na wyjście standardowe.
-• test_pusty() - uruchamiam tylko wątek readera, więc próbuje on przeczytać
-wiadomość z pustego bufora.
-• test_przepelniony() - jest to dokładnie taki sam test, jak
-test_uzytkownikow() lub test_VIP().
-• Test() - test ogólny sprawdzający poprawność działania całego programu dla
-następujących warunków:
+
+• test_pusty() - uruchamiam tylko wątek readera, więc próbuje on przeczytać wiadomość z pustego bufora.
+
+• test_przepelniony() - jest to dokładnie taki sam test, jak test_uzytkownikow() lub test_VIP().
+
+• Test() - test ogólny sprawdzający poprawność działania całego programu dla następujących warunków:
+
 ◦ MAX_MSG = 5
+
 ◦ liczba wszystkich użytkowników – 10
+
 ◦ 1 reader
