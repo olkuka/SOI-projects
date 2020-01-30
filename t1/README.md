@@ -4,10 +4,14 @@
 
 **Moje rozwiązanie krok po kroku:**
 
-    1. Dodanie #define ADDNRTOPROC 78 i zmiana NCALLS na o jeden większy w pliku usr/include/minix/callnr.h.
+    1. Dodanie 
+       #define ADDNRTOPROC 78 
+       i zmiana NCALLS na o jeden większy w pliku usr/include/minix/callnr.h.
 
-    2. Dodanie procedury obługi do_addnrtoproc do pliku usr/src/mm/main.c (plik w załączniku). 
-       System call zwraca numer procesu, który go wywołuje powiększonego o pid, czyli liczbę, która została podana, jako       argument (pid to mm_in.m1_i1).
+    2. Dodanie procedury obługi 
+       do_addnrtoproc do pliku usr/src/mm/main.c (plik w załączniku). 
+       System call zwraca numer procesu, który go wywołuje powiększonego o pid, czyli liczbę, która została podana, jako
+       argument (pid to mm_in.m1_i1).
        
     3. Umieszczenie prototypu funkcji w usr/src/mm/proto.h pod main.c, który wygląda tak:
 
