@@ -1,2 +1,2 @@
 # SOI-projects
-(Warsaw University of Technology) Operating Systems based on Minix 2.0 and Linux environment 
+all of my 6 projects on 3rd semester at Warsaw Univeristy of Technology
