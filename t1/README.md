@@ -4,14 +4,14 @@
 
    Rekompilacja jądra:
    
-      1. cd /usr/src/tools
-      2. make hdboot
-      3. cd
-      4. shutdown
-      5. boot
+      cd /usr/src/tools
+      make hdboot
+      cd
+      shutdown
+      boot
   
    Uruchomienie programu testującego:
    
-      1. cd /SOI_lab/t1
-      2. cc test.c -o ./test
-      3. ./test
+      cd /SOI_lab/t1
+      cc test.c -o ./test
+      ./test
