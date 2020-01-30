@@ -2,8 +2,6 @@
 
 **Utworzenie usługi systemowej, która przyjmie jeden argument (np.: liczba 32-bitowa) i ten argument w swojej implementacji dodaje do numeru procesu ją wywołującego. Szczególną uwagę zwrócić na sposób sprawdzenia czy rozwiązanie faktycznie działa.**
 
-**Moje rozwiązanie krok po kroku:**
-
     1. Dodanie 
        #define ADDNRTOPROC 78 
        i zmiana NCALLS na o jeden większy w pliku usr/include/minix/callnr.h.
@@ -16,6 +14,7 @@
     3. Umieszczenie prototypu funkcji w usr/src/mm/proto.h pod main.c, który wygląda tak:
 
 	_PROTOTYPE( int do_addnrtoproc, (void)   );
+
 
    4. Dodanie w pliku usr/src/mm/table.c adresu funkcji:
 
