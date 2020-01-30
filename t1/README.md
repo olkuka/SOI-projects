@@ -1,6 +1,6 @@
-**Polecenie:
+**Polecenie:**
 
-Utworzenie usługi systemowej, która przyjmie jeden argument (np.: liczba 32-bitowa) i ten argument w swojej implementacji dodaje do numeru procesu ją wywołującego. Szczególną uwagę zwrócić na sposób sprawdzenia czy rozwiązanie faktycznie działa.**
+**Utworzenie usługi systemowej, która przyjmie jeden argument (np.: liczba 32-bitowa) i ten argument w swojej implementacji dodaje do numeru procesu ją wywołującego. Szczególną uwagę zwrócić na sposób sprawdzenia czy rozwiązanie faktycznie działa.**
 
 **Moje rozwiązanie krok po kroku:**
 
@@ -24,13 +24,13 @@ Utworzenie usługi systemowej, która przyjmie jeden argument (np.: liczba 32-bi
    6. Napisanie programu testującego (test.c – komentarze znajdują się w pliku).
    
    6. Rekompilacja jądra:
-      cd /usr/src/tools
-      make hdboot
-      cd
-      shutdown
-      boot
+      1. cd /usr/src/tools
+      2. make hdboot
+      3. cd
+      4. shutdown
+      5. boot
   
    7. Uruchomienie programu testującego:
-      cd /SOI_lab/t1
-      cc test.c -o ./test
-      ./test
+      1. cd /SOI_lab/t1
+      2. cc test.c -o ./test
+      3. ./test
