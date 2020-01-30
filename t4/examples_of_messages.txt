@@ -1,0 +1,25 @@
+Wiadomosc testowa: A
+Wiadomosc testowa: B
+Wiadomosc testowa: C.
+Wiadomosc testowa: D
+Wiadomosc testowa: E.
+Wiadomosc testowa: F.
+Wiadomosc testowa: G.
+Wiadomosc testowa: H.
+Wiadomosc testowa: I.
+Wiadomosc testowa: J.
+Wiadomosc testowa: K.
+Wiadomosc testowa: L.
+Wiadomosc testowa: M.
+Wiadomosc testowa: N.
+Wiadomosc testowa, która jest bardzo długa i nie może zostać wysłana: O.
+Wiadomosc testowa: P.
+Wiadomosc testowa: R.
+Wiadomosc testowa: S.
+Wiadomosc testowa: T.
+Wiadomosc testowa, która jest bardzo długa i nie może zostać wysłana: U.
+Wiadomosc testowa: W.
+Wiadomosc testowa: X.
+Wiadomosc testowa: Y.
+Wiadomosc testowa: Z.
+
