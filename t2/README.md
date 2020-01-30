@@ -21,3 +21,4 @@ Główny program testujący. Zawiera obciążającą pętle (z pierwiastkowaniem
 • Skrypt runtests:
 Wywołuje dwa programy test.c współbieżnie w tle.
 
+**Uwaga** W folderze znajdują się wszystkie pliki, które zostały zmienione na potrzeby polecenia w systemie Minix 2.0.
