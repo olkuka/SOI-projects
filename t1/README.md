@@ -1,5 +1,4 @@
 **Polecenie:**
-
 **Utworzenie usługi systemowej, która przyjmie jeden argument (np.: liczba 32-bitowa) i ten argument w swojej implementacji dodaje do numeru procesu ją wywołującego. Szczególną uwagę zwrócić na sposób sprawdzenia czy rozwiązanie faktycznie działa.**
 
    Rekompilacja jądra:
