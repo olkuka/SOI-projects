@@ -6,7 +6,8 @@ Utworzenie usługi systemowej, która przyjmie jeden argument (np.: liczba 32-bi
 
     1. Dodanie #define ADDNRTOPROC 78 i zmiana NCALLS na o jeden większy w pliku usr/include/minix/callnr.h.
 
-    2. Dodanie procedury obługi do_addnrtoproc do pliku usr/src/mm/main.c (plik w załączniku). System call zwraca numer procesu, który go wywołuje powiększonego o pid, czyli liczbę, która została podana, jako argument (pid to mm_in.m1_i1).
+    2. Dodanie procedury obługi do_addnrtoproc do pliku usr/src/mm/main.c (plik w załączniku). 
+       System call zwraca numer procesu, który go wywołuje powiększonego o pid, czyli liczbę, która została podana, jako       argument (pid to mm_in.m1_i1).
        
     3. Umieszczenie prototypu funkcji w usr/src/mm/proto.h pod main.c, który wygląda tak:
 
@@ -23,13 +24,13 @@ Utworzenie usługi systemowej, która przyjmie jeden argument (np.: liczba 32-bi
    6. Napisanie programu testującego (test.c – komentarze znajdują się w pliku).
    
    6. Rekompilacja jądra:
-    • cd /usr/src/tools
-    • make hdboot
-    • cd
-    • shutdown
-    • boot
+      cd /usr/src/tools
+      make hdboot
+      cd
+      shutdown
+      boot
   
    7. Uruchomienie programu testującego:
-    • cd /SOI_lab/t1
-    • cc test.c -o ./test
-    • ./test
+      cd /SOI_lab/t1
+      cc test.c -o ./test
+      ./test
